@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-spinit {
+    --color-bg-primary: #cdd7eb;
+    --color-bg-secondary: #6f72b9;
+    --color-bg-default: #fff;
+    --color-bg-inverse: #5255ac;
+
+    --color-text-primary: #fff;
+    --color-text-secondary: #44467b;
+    --color-text-default: #373737;
+    --color-text-default-soft: #6a6a6a;
+    --color-text-inverse: #fff;
+    --color-text-inverse-soft: rgba(255, 255, 255, 0.7);
+
+    --font-display: Futura, Trebuchet MS, Arial, sans-serif;
+    --font-body: Futura, Trebuchet MS, Arial, sans-serif;
+
+    --font-weight-normal: 400;
+    --font-weight-display: 600;
+    --font-weight-btn: 600;
+
+    --rounded-btn: 9999px;
+}
+
+
+@layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+
+    @screen md {
+        h2 {
+          @apply text-3xl;
+        }
+    }
+}
+
+
+/* Abstractions, example */
+
+/* .btn {
+    @apply py-2 px-4 font-semibold shadow-md cursor-pointer;
+}
+
+.btn-primary {
+    @apply bg-primary text-primary;
+}
+
+.btn-secondary {
+    @apply bg-secondary text-primary;
+} */
