@@ -5,11 +5,11 @@ function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <header className="bg-red-600 sm:bg-gray-800">
+    <header className="bg-red-600 sm:bg-gray-200 sm:dark:bg-gray-800 shadow-md">
       <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:flex-no-wrap md:p-8">
         <div className="flex items-center">
           <Link href="/">
-            <a className="text-xl font-bold text-white">
+            <a className="text-xl font-bold text-gray-800 dark:text-gray-400">
               Happy Friday Demo
             </a>
           </Link>
@@ -37,11 +37,11 @@ function Header() {
           {[
             { title: "Home", route: "/" },
             { title: "About", route: "/about" },
-            { title: "Forms", route: "/forms" }
+            { title: "Contact", route: "/forms" }
           ].map(navigationItem => (
             <li className="mt-3 md:mt-0 md:ml-6" key={navigationItem.title}>
               <Link href={navigationItem.route}>
-                <a className="block text-white">{navigationItem.title}</a>
+                <a className="block font-bold uppercase text-gray-800 dark:text-gray-400">{navigationItem.title}</a>
               </Link>
             </li>
           ))}

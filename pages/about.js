@@ -19,8 +19,8 @@ function AboutPage() {
             },
           ].map((section) => (
             <div key={section.heading}>
-              <h2 className="mb-3 text-xl font-bold">{section.heading}</h2>
-              <p>{section.body}</p>
+              <h2 className="mb-3 text-xl font-bold text-black dark:text-gray-300">{section.heading}</h2>
+              <p className="text-black dark:text-gray-400">{section.body}</p>
             </div>
           ))}
         </div>
